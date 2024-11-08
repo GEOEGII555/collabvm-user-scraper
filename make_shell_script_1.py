@@ -19,7 +19,7 @@ if [ ! -z "${admingroup}" ]; then
     adminargs="${adminargs} -G ${admingroup}";
 fi
 guestargs="${args}"
-if [ ! -z "${guestargs}" ]; then
+if [ ! -z "${guestgroup}" ]; then
     guestargs="${guestargs} -G ${guestgroup}";
 fi
 
@@ -49,5 +49,4 @@ with open("funny_shell_script.sh", "wb") as f:
         f.write("args} ".encode('utf-8'))
         f.write(x.encode('utf-8'))
         f.write("\r\n".encode('utf-8'))
-    f.write("pause\r\n".encode('utf-8'))
-            
+    f.write("echo Press Enter to exit.\r\nread -r a\r\n".encode('utf-8'))

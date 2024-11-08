@@ -20,4 +20,4 @@ with open("undo_funny_shell_script.sh", "wb") as f:
         f.write(f'echo Removing user \\\"{x}\\\"... \\(Rank\\: {Rank.ELEMENTS[user.rank]}\\)\r\n'.encode('utf-8'))
         f.write(f"userdel {x} --remove\r\n".encode('utf-8'))
         f.write(f"groupdel {x}\r\n".encode('utf-8'))
-    f.write("pause\r\n".encode('utf-8'))
+    f.write("echo Press Enter to exit.\r\nread -r a\r\n".encode('utf-8'))
