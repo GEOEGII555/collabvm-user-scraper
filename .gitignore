@@ -1,5 +1,7 @@
 funny_batch_file.bat
 undo_funny_batch_file.bat
+funny_shell_script.sh
+undo_funny_shell_script.sh
 __pycache__
 .venv
 venv
